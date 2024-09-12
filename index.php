@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BostaMotors</title>
+    <title>SmMotors</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
@@ -20,8 +20,8 @@
 <div class="d-flex flex-column">
     <nav class="navbar navbar-light bg-body-tertiary">
         <a class="navbar-brand" href="index.php">
-            <img src="https://e3ba6e8732e83984.cdn.gocache.net/uploads/image/file/1300080/regular_332d4832f6525db120672fca7cb9a19a.png" alt="Logo" width="30" height="24">
-            BostaMotors
+            <img src="https://icones.pro/wp-content/uploads/2021/03/icone-de-voiture-symbole-png-bleue.png" alt="Logo" width="30" height="24">
+            SmMotors
         </a>
         <div class="mx-auto"> <!-- Alinha o conteúdo ao centro -->
             <ul class="navbar-nav d-flex flex-row">
@@ -59,13 +59,97 @@
     <form action="" method="post">
         <h1 class="titulos">Procure aqui</h1>
             <div class="container">
-                <hr class="hrbusca">
+                <!-- <hr class="hrbusca"> <br> -->
             </div>
+
+    
+            <div class="tabs">
+        <label class="tab active" for="todos">
+            <input type="radio" name="veiculo" id="todos" checked>
+            Todos
+        </label>
+        <label class="tab" for="novos">
+            <input type="radio" name="veiculo" id="novos">
+            Novos
+        </label>
+        
+        <label class="tab" for="usados">
+            <input type="radio" name="veiculo" id="usados">
+            Usados
+        </label>
+    </div>
+
+
+    <script>
+        // Script para alterar o estado ativo do botão
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+            });
+        });
+    </script>
+
         <div class="d-flex">
-                <input type="text" class="form-control" id="sexo" placeholder="Busque Aqui">
-                <button type="submit" class="btn btn-primary mb-3" id="botaobusca">Buscar</button>
+                <input type="text" class="form-control" id="sexo" placeholder="Digite a marca ou modelo do carro"> 
+                <button type="submit" class="btn btn-primary mb-3" id="botaobusca">
+                    
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+</svg> 
+                Procure aqui</button>
         </div>
     </form>
 </div>
+
+<!--CATEGORIAS -->
+
+<h1 class="titulos" id="tcategorias">Categorias</h1>
+
+<div class="cards">
+
+<div class="card" style="width: 18rem;">
+  <img src="https://www.honda.com.br/motos/sites/hda/files/2023-09/moto-honda-cb-500x-vermelho-victory-red-imagem-home_0.webp" class="card-img-top" alt="...">
+  <hr class="hrcard">
+  
+  <div class="card-body">
+    <p class="card-text">Motos</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://kifalstorage.s3.amazonaws.com/new/img/honda/civic/principal.png" class="card-img-top" alt="...">
+  <hr class="hrcard">
+  <div class="card-body">
+    <p class="card-text">Sedans</p>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="https://di-uploads-pod33.dealerinspire.com/lutherwestsidevolkswagen/uploads/2021/01/2020-VW-Golf-GTI-MLP-Hero-Pic.png" class="card-img-top" alt="..." >
+  <hr class="hrcard">
+  <div class="card-body">
+    <p class="card-text">Hatches</p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://www2.mercedes-benz.com.br/content/dam/hq/passengercars/cars/cla/cla-coupe-c118-fl-pi/modeloverview/02-2023/images/mercedes-benz-cla-coupe-c118-modeloverview-696x392-02-2023.png" class="card-img-top" alt="...">
+  <hr class="hrcard">
+  <div class="card-body">
+    <p class="card-text">Coupés</p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://www.porsche.dk/globalassets/modeller/cayenne/cayenne-e3-ll/cayenne-coupe-turbo-e-hybrid-gt-pakke_modelbillede.png" class="card-img-top" alt="...">
+  <hr class="hrcard">
+  <div class="card-body">
+    <p class="card-text">SUVS</p>
+  </div>
+</div>
+</div>
+
 </body>
 </html>

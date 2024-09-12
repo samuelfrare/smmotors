@@ -23,7 +23,7 @@ body{
 
 .navbar{
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 3px 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 .linhavertical{
@@ -32,41 +32,95 @@ margin-right: 10px;
 height: 50px; border-left: 2px solid;
 }
 
-.busca{
+.busca {
     background-color: white;
-    width: 60%;
-    margin-top: 80px;
+    width: 60%; /* Use porcentagem para garantir responsividade */
+    max-width: 800px; /* Limite máximo de largura */
+    margin: 30px auto; /* 'auto' centraliza horizontalmente */
     padding-top: 20px;
     text-align: center;
-    margin-left: 400px;
-    box-shadow: 4px 2px 30px;
-    border-radius: 25px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
-#botaobusca{
+#botaobusca {
     margin-left: 3%;
-    width: 10%;
+    width: 20%; /* Use porcentagem para garantir responsividade */
+    background-color: #4400ff;
 }
-#sexo{
+
+/* Campo de texto */
+#sexo {
     margin-left: 3%;
-    width: 80%;
+    width: 70%; /* Use porcentagem para garantir responsividade */
 }
 
 /*O uso de um contêiner (como a classe .container no exemplo) para centralizar um elemento horizontalmente é uma técnica comum que facilita o controle do layout.
  Vamos explorar por que o contêiner pode ser necessário e algumas alternativas.
 Usar flexbox no contêiner pai é uma maneira fácil e eficaz de centralizar elementos. Com flexbox, você pode garantir que o <hr> seja centralizado horizontalmente
 dentro de seu contêiner, que pode ter qualquer largura.*/
-.container { 
+.container {
     display: flex;
     justify-content: center;
-    width: 100%; /* Certifique-se de que o contêiner ocupa toda a largura disponível */
+    width: 100%;
 }
-
 .hrbusca {
-    top: 50px;
     border-radius: 10px;
     width: 50%;
     border: none;
     height: 5px;
-    background: linear-gradient(to right, rgb(67, 126, 255), #4400ff, rgba(0, 0, 0, 0));
- 
+    background-color: #4400ff;
+    
+}
+
+
+.tabs {
+    margin-left: 3.2%;
+    display: flex;
+    justify-content: left;
+    gap: 0;
+    margin-bottom: 20px;
+}
+
+.tab {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 2px;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #4400ff; /* Cor de fundo para o botão ativo */
+    color: white;
+    border-color: #4400ff;
+}
+
+.tab input[type="radio"] {
+    display: none;
+}
+
+
+#tcategorias{
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    justify-content: auto ;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.card-text{
+    font-size: 22px;
+    text-align: center;
+    justify-content: center ;
+    color: rgb(6, 82, 223);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
