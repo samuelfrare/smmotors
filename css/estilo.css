@@ -1,0 +1,72 @@
+
+body{
+    background-color: rgb(212, 46, 46);
+}
+
+
+
+.textonav{
+    text-align: center;
+}
+
+.titulos{
+    text-align: center;
+    color: rgb(6, 82, 223);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-link{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.navbar{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 10px;
+}
+
+.linhavertical{
+opacity: 40%;
+margin-right: 10px;
+height: 50px; border-left: 2px solid;
+}
+
+.busca{
+    background-color: white;
+    width: 60%;
+    margin-top: 80px;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 400px;
+    box-shadow: 4px 2px 30px;
+    border-radius: 25px;
+}
+#botaobusca{
+    margin-left: 3%;
+    width: 10%;
+}
+#sexo{
+    margin-left: 3%;
+    width: 80%;
+}
+
+/*O uso de um contêiner (como a classe .container no exemplo) para centralizar um elemento horizontalmente é uma técnica comum que facilita o controle do layout.
+ Vamos explorar por que o contêiner pode ser necessário e algumas alternativas.
+Usar flexbox no contêiner pai é uma maneira fácil e eficaz de centralizar elementos. Com flexbox, você pode garantir que o <hr> seja centralizado horizontalmente
+dentro de seu contêiner, que pode ter qualquer largura.*/
+.container { 
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Certifique-se de que o contêiner ocupa toda a largura disponível */
+}
+
+.hrbusca {
+    top: 50px;
+    border-radius: 10px;
+    width: 50%;
+    border: none;
+    height: 5px;
+    background: linear-gradient(to right, rgb(67, 126, 255), #4400ff, rgba(0, 0, 0, 0));
+ 
+}
