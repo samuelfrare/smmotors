@@ -107,9 +107,9 @@
 
 <h1 class="titulos" id="tcategorias">Categorias</h1>
 
-<div class="cards">
 
-<div class="card" style="width: 18rem;">
+<!-- 
+<div class="cards" style="width: 18rem;">
   <img src="https://www.honda.com.br/motos/sites/hda/files/2023-09/moto-honda-cb-500x-vermelho-victory-red-imagem-home_0.webp" class="card-img-top" alt="...">
   <hr class="hrcard">
   
@@ -117,7 +117,7 @@
     <p class="card-text">Motos</p>
   </div>
 </div>
-<div class="card" style="width: 18rem;">
+<div class="cards" style="width: 18rem;">
   <img src="https://kifalstorage.s3.amazonaws.com/new/img/honda/civic/principal.png" class="card-img-top" alt="...">
   <hr class="hrcard">
   <div class="card-body">
@@ -126,7 +126,7 @@
 </div>
 
 
-<div class="card" style="width: 18rem;">
+<div class="cards" style="width: 18rem;">
   <img src="https://di-uploads-pod33.dealerinspire.com/lutherwestsidevolkswagen/uploads/2021/01/2020-VW-Golf-GTI-MLP-Hero-Pic.png" class="card-img-top" alt="..." >
   <hr class="hrcard">
   <div class="card-body">
@@ -134,7 +134,7 @@
   </div>
 </div>
 
-<div class="card" style="width: 18rem;">
+<div class="cards" style="width: 18rem;">
   <img src="https://www2.mercedes-benz.com.br/content/dam/hq/passengercars/cars/cla/cla-coupe-c118-fl-pi/modeloverview/02-2023/images/mercedes-benz-cla-coupe-c118-modeloverview-696x392-02-2023.png" class="card-img-top" alt="...">
   <hr class="hrcard">
   <div class="card-body">
@@ -142,14 +142,95 @@
   </div>
 </div>
 
-<div class="card" style="width: 18rem;">
+<div class="cards" style="width: 18rem;">
   <img src="https://www.porsche.dk/globalassets/modeller/cayenne/cayenne-e3-ll/cayenne-coupe-turbo-e-hybrid-gt-pakke_modelbillede.png" class="card-img-top" alt="...">
   <hr class="hrcard">
   <div class="card-body">
     <p class="card-text">SUVS</p>
   </div>
+</div> -->
+
+
+<div class="containercard">
+
+<div class="carde">
+    <a href="#">
+        <div class="img-box">
+            <img src="https://s3-sa-east-1.amazonaws.com/oextra.net/2018/11/24/5bf8b88161e80.png" alt="">
+            <hr class="hrcard">
+        </a>
+    </div>
+    <div class="content">
+        <h2>HATCH</h2>
+    </div>
 </div>
+
+<div class="carde">
+    <a href="#">
+    <div class="img-box">
+        <img src="https://www.tokioveiculos.com.br/images/cores/sibranco.png" alt="">
+    </a>
+        <hr class="hrcard">
+    </div>
+    <div class="content">
+        <h2>SEDAN</h2>
+    </div>
 </div>
+
+<div class="carde">
+    <a href="#">
+    <div class="img-box">
+        <img src="https://www.porsche.dk/globalassets/modeller/cayenne/cayenne-e3-ll/cayenne-coupe-turbo-e-hybrid-gt-pakke_modelbillede.png" alt="">
+        <hr class="hrcard">
+    </a>
+    </div>
+    <div class="content">
+        <h2>SUV</h2>
+    </div>
+</div>
+
+<div class="carde">
+    <a href="#">
+    <div class="img-box">
+        <img src="https://production.autoforce.com/uploads/version/profile_image/2056/model_main_webp_comprar-easy-1-0-flex-4p_d942e963a5.png.webp" alt="">
+        <hr class="hrcard">
+    </a>
+    </div>
+    <div class="content">
+        <h2>COMPACTO</h2>
+    </div>
+</div>
+
+<div class="carde">
+    <a href="#">
+    <div class="img-box">
+        <img src="https://www2.mercedes-benz.com.br/content/dam/hq/passengercars/cars/gle/gle-coupe-c167-fl-pi/modeloverview/01-2023/images/mercedes-benz-gle-coupe-c167-modeloverview-696x392-01-2023.png" alt="">
+        <hr class="hrcard">
+        </a>
+    </div>
+    <div class="content">
+        <h2>COUPÉ</h2>
+    </div>
+</div>
+
+<div class="carde">
+    <a href="#">
+    <div class="img-box">
+        <img src="https://media.toyota.com.br/72f77bfb-de4a-4b1f-ba9c-62474fe4307f.png" alt="">
+        <hr class="hrcard">
+    </a>
+    </div>
+    <div class="content">
+        <h2>PICAPE</h2>
+    </div>
+</div>
+
+
+
+
+
+</div>
+
 
 </body>
 </html>
